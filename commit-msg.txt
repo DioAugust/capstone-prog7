@@ -1,0 +1,7 @@
+feat: adicionar compressão automática de áudio para AAC
+
+- Implementa FFmpegAudioCompressionService para comprimir áudios em AAC (128kbps)
+- Adiciona logs de tempo de compressão com Stopwatch
+- Atualiza AudioController para comprimir antes de salvar no storage
+- Cria testes automatizados para validar compressão
+- Adiciona documentação técnica em docs/week2-analysis.md

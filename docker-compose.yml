@@ -20,6 +20,10 @@ services:
     volumes:
       - azurite_data:/data
 
+  ffmpeg:
+    image: jrottenberg/ffmpeg:latest
+    command: ["-version"]
+
 volumes:
   sqlserver_data:
   azurite_data:
