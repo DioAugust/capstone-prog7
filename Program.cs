@@ -19,6 +19,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton(x => new BlobServiceClient(builder.Configuration.GetConnectionString("AzureStorage")));
 builder.Services.AddScoped<IAudioStorageService, AzureBlobStorageService>();
 builder.Services.AddScoped<IAudioCompressionService, FFmpegAudioCompressionService>();
+builder.Services.AddScoped<IAudioSummaryService, AudioSummaryService>();
 
 var app = builder.Build();
 

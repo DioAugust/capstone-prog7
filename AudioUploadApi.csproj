@@ -14,4 +14,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="AudioUploadApi.Tests\**" />
+    <Content Remove="AudioUploadApi.Tests\**" />
+    <EmbeddedResource Remove="AudioUploadApi.Tests\**" />
+    <None Remove="AudioUploadApi.Tests\**" />
+  </ItemGroup>
+
 </Project>
